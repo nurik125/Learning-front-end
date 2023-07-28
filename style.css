@@ -1,0 +1,86 @@
+body{
+    background-color: #C8FD6B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+p{
+    margin: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mainp{
+    background: #fff;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.answer{
+    width: 12%;
+}
+
+.mainp1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    border: 2px solid #3C72FD;
+    width: 100%;
+    display: flex;
+}
+
+.main{
+    background-color: aqua;
+    width: 50%;
+    height: 22lh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first{
+    border-right: 2px solid #3C72FD;
+}
+
+.second{
+    border-left: 2px solid #3C72FD;
+}
+
+label{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-left: 10%;
+    padding: 20px;
+    cursor: pointer;
+}
