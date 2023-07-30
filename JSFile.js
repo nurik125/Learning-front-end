@@ -32,12 +32,15 @@ function change() {
     document.querySelector("header").innerHTML = "<h1>Changed</h1>";
   } else {
     document.querySelector("header").innerHTML =
-      "<h1>To-Dos</h1> <p>(returned)</p>";
+      "<h1>To-Dos</h1> <span>(returned)</span>";
   }
   k++;
 }
 
 const el = document.getElementsByTagName("li");
+const ul = document.querySelector("ul");
+const input = document.getElementById("UlName");
+
 function Display_length() {
   const p = document.querySelector("p");
   // el[1].innerHTML = `<h1>${el[0].innerHTML}</h1>`;
@@ -46,8 +49,39 @@ function Display_length() {
 
 function AddUl() {
   if (el.length < 14) {
-    const ul = document.querySelector("ul");
     ul.innerHTML += "<li></li>"
   }
   else { alert("The limit of ul's has been exceeded"); }
 }
+
+function displayItem() {
+  const el1 = document.getElementsByClassName("urgent");
+  const p = document.querySelector("p.mainp");
+  p.innerText = el1[0].innerHTML;
+}
+
+// const el2 = document.querySelector("script")
+// console.log(el2.src)
+
+function addUlName() {
+  if (el.length < 14) {
+    ul.innerHTML += `<li>${input.value}</li>`;
+  } else {
+    alert("The limit of ul's has been exceeded");
+  }
+  
+}
+
+
+const img = document.getElementById("namename");
+img.src = "https://mimo.app/r/cat.png";
+const a = document.querySelector("a");
+a.href = "https://www.youtube.com/";
+console.log();
+
+function AttributeChange() {
+  input.type = "checkbox";
+  input.style.width = "300px";
+}
+
+

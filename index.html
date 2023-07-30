@@ -7,8 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <header><h1>To-Dos</h1></header>
+    <!-- Header -->
+
+    <header>
+      <div class="img">
+        <img src="#" id="namename" alt="#" />
+        <a href="https://mimo.app/r/cat.png" target="_blank">Link to cat image</a>
+      </div>
+      <h1>To-Dos</h1>
+    </header>
+
+    <!-- Main  100% 2 parts-->
+
     <main>
+      <!-- First 50% Main  -->
+
       <div class="main first">
         <label for="input1">
           <input id="input1" type="checkbox" /> <span id="span">buy nails</span>
@@ -19,25 +32,38 @@
         <label for="input3">
           <input id="input3" type="checkbox" /> <span>buy smt else</span>
         </label>
+        <button onclick="addUlName()">Enter ul</button>
+        <input type="text" placeholder="Ul name" id="UlName" />
       </div>
+
+      <!-- Second 50% Main  -->
+
       <div class="main">
         <ul>
-          <li>Misha</li>
-          <li>Arseni</li>
+          <li class="urgent">Misha</li>
+          <li class="urgent">Arseni</li>
           <li>Alex</li>
         </ul>
 
-        <div class="mainp1">
-          <h3 class="mainp answer">Answer:</h3>
-          <p class="mainp"></p>
+        <div class="AnsDiv">
+          <h3 class="mainParagraph answer" id="Ans">Answer:</h3>
+          <p class="mainParagraph" id="AnsParagraph"></p>
         </div>
         <button onclick="AddUl()">Add one ul</button>
       </div>
     </main>
+
+    <!-- Footer -->
+
     <footer>
       <button onclick="change()">Change header text</button>
       <button onclick="Display_length()">Display length</button>
+      <button onclick="displayItem()">first ul element</button>
+      <button onclick="AttributeChange()">AttributeChange</button>
     </footer>
+
+    <!-- Scripts -->
+
     <script src="JSFile.js"></script>
   </body>
 </html>
